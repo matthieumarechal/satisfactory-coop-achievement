@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+    background-color: rgb(18, 10, 31);
+    /* background: #1a1a1a; */
+    position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  pointer-events: none;
+   z-index: -1;
+}
+
+h2 {
+    color: #efe6f7;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+p {
+    color: #cbbfd5;
+    font-family: arial;
+    padding-bottom: 30px;
+    line-height: 1.4;
+
+}
+
+.card-text {
+    padding-left: 20px;
+}
+
+#wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.left-content {
+    display: flex;
+}
+
+.card, .card-finished {
+    border: 1px solid #462f58;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 33, 52);
+    width: 950px;
+    /* padding: 30px; */
+    border-radius: 15px;
+    margin-bottom: 30px;
+    min-height: 150px;
+    transition: 1000ms;
+}
+
+.card-finished {
+    opacity: 40%;
+    border: 1px solid #ab8b3b;
+    /* border: 1px solid #ee955a; */
+}
+
+.card:hover {
+    /* border: 1px solid #a47e37; */
+    border: 1px solid #a086b2;
+}
+
+
+.card-text {
+    align-self: center;
+}
+
+.card img {
+    height: 100px;
+    opacity: 92%;
+    margin: 20px 0 0 20px;
+}
+
+.card-finished img {
+    height: 100px;
+    opacity: 92%;
+    margin: 20px 0 0 20px;
+}
+
+.stamp {
+    transform: rotate(5deg);
+    margin-top: -30px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.owner {
+    margin-top: 20px;
+    align-self: flex-end;
+    font-size: 12px;
+    font-family: arial;
+    color: #cbbfd5;
+    height: 30px;
+    width: 150px;
+    background-color: #43384d;
+    text-align: center;
+    padding: 7px 5px 5px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.diff {
+    width: 150px;
+    font-size: 12px;
+    font-family: arial;
+    color: #cbbfd5;
+    height: 30px;
+    background-color: #43384d;
+    text-align: center;
+    padding: 7px 5px 5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
